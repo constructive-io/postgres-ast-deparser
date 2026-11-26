@@ -11,7 +11,7 @@ jobs:
     # Docker Hub image that `container-job` executes in
     # container: node:latest
     # container: pyramation/node-gyp
-    container: mhart/alpine-node:12
+    container: node:22-bookworm
 
     # Service containers to run with `container-job`
     services:
@@ -41,7 +41,7 @@ jobs:
         run: echo `pwd`
 
       - name: deps
-        run: apk update && apk add bash git python3-dev make g++ postgresql-client
+        run: apt-get update && apt-get install -y python3-dev make g++ postgresql-client
 
       - name: deps
         run: yarn

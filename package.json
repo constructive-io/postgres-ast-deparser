@@ -21,5 +21,9 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "resolutions": {
+    "nan": "^2.30.0",
+    "node-gyp": "^10.3.1"
+  }
 }
