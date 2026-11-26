@@ -50,6 +50,7 @@
   "jest": {
     "testPathIgnorePatterns": [
       "__fixtures__"
-    ]
+    ],
+    "testEnvironment": "node"
   }
 }
